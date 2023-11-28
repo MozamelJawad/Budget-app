@@ -14,7 +14,7 @@
   </head>
 
   <body>
-    <div class="container-fluid">
+    <div>
 
       <% if flash[:notice] %>
         <div class="alert alert-success alert-dismissible fade show mb-0" role="alert">
@@ -29,7 +29,7 @@
         </div>
       <% end %>
 
-    <div class="container p-5">
+    <div>
         <%= yield %>
     </div>
   </div>
