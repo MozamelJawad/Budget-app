@@ -20,5 +20,4 @@ class ExpensesController < ApplicationController
   def params_expense
     params.require(:expense).permit(:name, :amount, :category_id)
   end
-
 end

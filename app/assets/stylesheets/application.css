@@ -13,143 +13,139 @@ body {
 }
 
 .home_container {
-    display: grid;
-    grid-template-rows: 1fr auto;
-    height: 100vh;
-  }
-  
-  .content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .centered {
-    text-align: center;
-  }
-  
-  .footer {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding: 10px;
-  }
-  
-  .btn {
-    padding: 10px 20px;
-  }
+  display: grid;
+  grid-template-rows: 1fr auto;
+  height: 100vh;
+}
 
-  .btn-color,
-  login_btn, 
-  .next {
-    background-color: #3778c2;
-    margin: 0 1rem;
-    border: none;
-    color: white;
-  }
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-  .btn-color:hover,
-  .login_btn:hover {
-    background-color: #2a5e9c;
-  }
+.centered {
+  text-align: center;
+}
 
-  .app-bg-color {
-    background-color: #3778c2;
-  }
+.btn {
+  padding: 10px 20px;
+}
 
-  .white {
-    color: white;
-  }
+.btn-color,
+.login_btn,
+.next {
+  background-color: #3778c2;
+  margin: 0 1rem;
+  border: none;
+  color: white;
+}
 
-  .white:hover {
-    color: white;
-  }
+.btn-color:hover,
+.login_btn:hover {
+  background-color: #2a5e9c;
+}
 
-  .navbar {
-    padding: 0;
-  }
+.app-bg-color {
+  background-color: #3778c2;
+}
 
-  .field {
-    padding: 0 1rem;
-  }
+.white {
+  color: white;
+}
 
-  .forgot_pass {
-    margin-top: 1rem;
-    text-align: center;
-  }
+.white:hover {
+  color: white;
+}
 
-  .forgot_password {
-    text-decoration: none;
-  }
+.navbar {
+  padding: 0;
+}
 
-  /* Category page */
+.field {
+  padding: 0 1rem;
+}
 
-  .wrapper {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-  
-  .cat_content {
-    flex: 1;
-  }
-  
-  .footer {
-    margin-top: auto;
-    height: 5.5rem; 
-    background-color: #5fb523;
-    position: sticky;
-    bottom: 0;
-    width: 100%;
-  }
+.forgot_pass {
+  margin-top: 1rem;
+  text-align: center;
+}
 
-  .footer_fixed {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
+.forgot_password {
+  text-decoration: none;
+}
 
-  .footer-button {
-    display: block;
-    width: calc(100% - 20px);
-    margin: 0 auto;
-    padding: 0.9rem;
-    border: 1px solid #fff;
-    text-align: center;
-    background-color: transparent;
-    color: white;
-    margin-bottom: 0.5rem;
-    text-decoration: none;
-    font-weight: bold;
-  }
+/* Category page */
 
-  .total_categories {
-    padding: 1rem;
-    margin-top: 0.5rem;
-    border-bottom: 1px solid #ccc;
-    display: flex;
-    justify-content: space-between;
-  }
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
 
-  .categories_list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1rem;
-    background-color: #fff;
-    margin-top: 0.5rem;
-  }
+.cat_content {
+  flex: 1;
+}
+
+.footer {
+  margin-top: auto;
+  height: 5.5rem;
+  background-color: #5fb523;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.footer_fixed {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-button {
+  display: block;
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  padding: 0.9rem;
+  border: 1px solid #fff;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.total_categories {
+  padding: 1rem;
+  margin-top: 0.5rem;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+
+.categories_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #fff;
+  margin-top: 0.5rem;
+}
 
 .create_cat {
-  background-color: #5fb523
+  background-color: #5fb523;
 }
 
 .icons {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .icon-set {
@@ -172,5 +168,3 @@ body {
 .nav-link {
   color: #fff !important;
 }
-
- 

@@ -1,5 +1,4 @@
 class CategoriesController < ApplicationController
-
   before_action :authenticate_user!
 
   def index
@@ -7,7 +6,6 @@ class CategoriesController < ApplicationController
     @expense = Expense.all
     @total_amount = @expense.sum(:amount)
     @category_totals = calculate_totals
-
   end
 
   def show
@@ -21,7 +19,7 @@ class CategoriesController < ApplicationController
   end
 
   def create
-    @category = Category.new (params_category)
+    @category = Category.new(params_category)
     @category.user_id = current_user.id
     if @category.save
       redirect_to categories_path
@@ -46,5 +44,4 @@ class CategoriesController < ApplicationController
 
     category_totals
   end
-
 end
