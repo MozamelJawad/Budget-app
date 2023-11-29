@@ -1,0 +1,39 @@
+ 
+ <div class="wrapper">
+ <nav class="navbar app-bg-color">
+  <div class="container">
+    <div class="navbar-nav mr-auto">
+    </div>
+
+    <div class="navbar-nav mx-auto">
+      <a class="nav-link white">CATEGORIES</a>
+    </div>
+
+    <div class="navbar-nav ml-auto">
+    <a class="nav-link white" href="/"><i style="font-size: 1.8rem;" class="bi bi-search"></i></a>
+    </div>
+  </div>
+</nav>
+   
+    <div class="cat_content">
+         <div class="total_categories">
+            <p>Total of all categories: </p>
+            <p>$ <%= @total_amount %> </p>
+         </div>
+
+    <% @categories.each do |category| %>
+    <%= link_to category_path(category), class: 'link' do %>
+    <div class="categories_list mx-3">
+        <i id="one" style="font-size:2rem" class="<%= category.icon %>" ></i>
+        <h5 id="three" class=""><%= category.name %></h5>
+        <p id="two" class="">$ <%= @category_totals[category.name] %> </p>
+    </div>
+    <% end %>
+    <% end %>
+
+    </div>
+    <div class="footer">
+
+    <%= link_to 'Add New Category', new_category_path, class: 'footer-button' %>
+    </div>
+  </div>

@@ -1,15 +1,170 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.home_container {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.centered {
+  text-align: center;
+}
+
+.btn {
+  padding: 10px 20px;
+}
+
+.btn-color,
+.login_btn,
+.next {
+  background-color: #3778c2;
+  margin: 0 1rem;
+  border: none;
+  color: white;
+}
+
+.btn-color:hover,
+.login_btn:hover {
+  background-color: #2a5e9c;
+}
+
+.app-bg-color {
+  background-color: #3778c2;
+}
+
+.white {
+  color: white;
+}
+
+.white:hover {
+  color: white;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.field {
+  padding: 0 1rem;
+}
+
+.forgot_pass {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.forgot_password {
+  text-decoration: none;
+}
+
+/* Category page */
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.cat_content {
+  flex: 1;
+}
+
+.footer {
+  margin-top: auto;
+  height: 5.5rem;
+  background-color: #5fb523;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 10px;
+}
+
+.footer_fixed {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-button {
+  display: block;
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  padding: 0.9rem;
+  border: 1px solid #fff;
+  text-align: center;
+  background-color: transparent;
+  color: white;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.total_categories {
+  padding: 1rem;
+  margin-top: 0.5rem;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+}
+
+.categories_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #fff;
+  margin-top: 0.5rem;
+}
+
+.create_cat {
+  background-color: #5fb523;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-set {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+}
+
+.nav-link {
+  color: #fff !important;
+}

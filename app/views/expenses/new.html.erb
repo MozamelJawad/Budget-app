@@ -1,0 +1,39 @@
+ 
+ <div class="wrapper">
+ <nav class="navbar app-bg-color">
+  <div class="container">
+    <div class="navbar-nav mr-auto">
+      <a class="nav-link white" href="/"><i style="font-size: 1.8rem;" class="bi bi-arrow-left-short"></i></a>
+    </div>
+
+    <div class="navbar-nav mx-auto">
+      <a class="nav-link white">New Expense</a>
+    </div>
+
+    <div class="navbar-nav ml-auto">
+    <a class="nav-link white" href="/"><i style="font-size: 1.8rem;" class="bi bi-search"></i></a>
+    </div>
+  </div>
+</nav>
+   
+<%= form_with(model: @expense, url: expenses_path, local: true) do |form| %>
+
+  <div class="field mt-3">
+    <%= form.text_field :name, class: "form-control", placeholder: "Name", required: true, autocomplete: "off" %>
+  </div>
+
+  <div class="field mb-3 mt-3">
+    <%= form.number_field :amount, class: "form-control", placeholder: "amount", required: true , autocomplete: "off" %>
+  </div>
+
+   <div class="field">
+      <%= form.collection_select(:category_id, Category.where(user: current_user).all, :id, :name, { prompt: "Select a Category" }, { class: "input-field", class: 'from-control px-3 py-2 middle', required: true, data: { validation: "required" }})  %>
+    </div>
+
+    <div class="footer footer_fixed">
+<%= form.submit "Save", class: 'footer-button' %>
+    </div>
+<% end %>
+
+    </div>
+    </div>
