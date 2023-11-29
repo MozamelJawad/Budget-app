@@ -6,7 +6,6 @@ RSpec.describe 'User', type: :feature do
   end
 
   describe 'Log in page' do
-
     it 'should log in with credentials' do
       visit new_user_session_path
       fill_in 'Email', with: @user.email
@@ -19,12 +18,11 @@ RSpec.describe 'User', type: :feature do
       visit new_user_session_path
       fill_in 'Email', with: 'aaa@gmail.com'
       fill_in 'Password', with: '123123'
-  end
+    end
 
-   it 'should not log in without password' do
-    visit new_user_session_path
-    fill_in 'Email', with: 'kkk'
-
+    it 'should not log in without password' do
+      visit new_user_session_path
+      fill_in 'Email', with: 'kkk'
+    end
   end
-end
 end
