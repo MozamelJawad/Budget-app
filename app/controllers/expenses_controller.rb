@@ -3,7 +3,7 @@ class ExpensesController < ApplicationController
 
   def new
     @expense = Expense.new
-    @categories = Category.all
+    @categories = Category.includes(:expenses).all
   end
 
   def show
