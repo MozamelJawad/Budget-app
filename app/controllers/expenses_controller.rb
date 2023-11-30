@@ -6,6 +6,10 @@ class ExpensesController < ApplicationController
     @categories = Category.all
   end
 
+  def show
+    @expense = Expense.find(params[:id])
+  end
+
   def create
     @categories = Category.all
     @expense = Expense.new(params_expense)
