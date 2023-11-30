@@ -179,10 +179,10 @@ body {
 }
 
 .form-control {
- border: none !important;
- border-bottom: 1px solid #ccc !important;
- padding: 1rem !important;
- border-radius: 0 !important;
+  border: none !important;
+  border-bottom: 1px solid #ccc !important;
+  padding: 1rem !important;
+  border-radius: 0 !important;
 }
 
 .form-control:hover,
