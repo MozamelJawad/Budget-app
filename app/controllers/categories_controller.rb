@@ -3,8 +3,7 @@ class CategoriesController < ApplicationController
 
   def index
     @categories = current_user.categories
-    @expense = Expense.all
-
+    @expense = Expense.where(author_id: current_user.id)
     @total_amount = @expense.sum(:amount)
     @category_totals = calculate_totals
   end

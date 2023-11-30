@@ -177,3 +177,14 @@ body {
 .signout-btn {
   margin-left: -1rem;
 }
+
+.form-control {
+ border: none !important;
+ border-bottom: 1px solid #ccc !important;
+}
+
+.form-control:hover,
+.form-control:focus,
+.form-control:active {
+  border: none !important;
+}
