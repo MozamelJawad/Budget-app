@@ -1,0 +1,39 @@
+ 
+ <div class="wrapper">
+ <nav class="navbar app-bg-color">
+  <div class="container">
+    <div class="navbar-nav mr-auto">
+      <a class="nav-link white" href="/"><i style="font-size: 1.8rem;" class="bi bi-arrow-left-short"></i></a>
+    </div>
+
+    <div class="navbar-nav mx-auto">
+      <a class="nav-link white"><%= @category.name %> </a>
+    </div>
+
+    <div class="navbar-nav ml-auto">
+    <a class="nav-link white" href="/"><i style="font-size: 1.8rem;" class="bi bi-search"></i></a>
+    </div>
+  </div>
+</nav>
+   
+    <div class="cat_content">
+         <div class="total_categories">
+            <p>Total amount of <%=@category.name %> </p>
+            <p>$ <%= @total_amount %> </p>
+
+         </div>
+
+      <% @expenses.each do |expense| %>
+      <%= link_to expense_path(expense), class: 'link' do %>
+        <div class="categories_list mx-3">
+            <h5 id="three" class=""><%= expense.name %></h5>
+            <p id="two" class="">$ <%= expense.amount %> </p>
+        </div>
+      <% end %>
+    <% end %>
+    </div>
+    <div class="footer">
+
+    <%= link_to 'Add New Expense', new_expense_path, class: 'footer-button' %>
+    </div>
+  </div>

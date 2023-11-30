@@ -1,0 +1,28 @@
+<nav class="navbar app-bg-color mb-5">
+  <div class="container">
+    <div class="navbar-nav mr-auto">
+      <a class="nav-link white" href="/"><i style="font-size: 1.8rem;" class="bi bi-arrow-left-short"></i></a>
+    </div>
+
+    <div class="navbar-nav mx-auto">
+      <a class="nav-link white">Forgot Password</a>
+    </div>
+
+    <div class="navbar-nav ml-auto">
+      <%= link_to 'Log in', new_user_session_path, class: 'nav-link white' %>
+    </div>
+  </div>
+</nav>
+
+<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+  <%= render "devise/shared/error_messages", resource: resource %>
+
+  <div class="field">
+    <br />
+    <%= f.email_field :email, class: 'form-control', placeholder: 'Write your email', autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="actions text-center gap-2 mt-3">
+    <%= f.submit "Send me reset password instructions", class: 'btn btn-primary btn-bg-color' %>
+  </div>
+<% end %>

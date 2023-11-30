@@ -1,0 +1,44 @@
+ 
+ <div class="wrapper">
+ <nav class="navbar app-bg-color" data-bs-theme="dark"">
+ 
+ <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class=" text-light navbar-toggler-icon"></span>
+    </button>
+    <a class=" text-light navbar-brand" href="#">Categoies</a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <% if current_user %>
+          <li class="nav-item mt-3"> <%= link_to "Edit Account", edit_user_registration_path, class: "nav-link" %></li>
+          <li class="nav-item mt-3 signout-btn "> <%= button_to "Sign Out", destroy_user_session_path, method: :delete, class: "btn btn-small mx-2" %></li>
+        <% end %>
+      </ul>
+    </div>
+
+</nav>
+   
+    <div class="cat_content">
+         <div class="total_categories">
+            <p>Total of all categories: </p>
+            <% if @categories.present? %>
+            <p>$ <%= @total_amount %> </p>
+           <% end %>
+         </div>
+
+    <% @categories.each do |category| %>
+    <%= link_to category_path(category), class: 'link' do %>
+    <div class="categories_list mx-3">
+        <i id="one" style="font-size:2rem" class="<%= category.icon %>" ></i>
+        <h5 id="three" class=""><%= category.name %></h5>
+        <p id="two" class="">$ <%= @category_totals[category.name] %> </p>
+    </div>
+    <% end %>
+    <% end %>
+
+    </div>
+    <div class="footer">
+
+    <%= link_to 'Add New Category', new_category_path, class: 'footer-button' %>
+    </div>
+  </div>

@@ -1,0 +1,43 @@
+ 
+ <div class="wrapper">
+ <nav class="navbar app-bg-color">
+  <div class="container">
+    <div class="navbar-nav mr-auto">
+      <a class="nav-link white" href="/"><i style="font-size: 1.8rem;" class="bi bi-arrow-left-short"></i></a>
+    </div>
+
+    <div class="navbar-nav mx-auto">
+      <a class="nav-link white">New Category</a>
+    </div>
+
+    <div class="navbar-nav ml-auto">
+    <a class="nav-link white" href="/"><i style="font-size: 1.8rem;" class="bi bi-search"></i></a>
+    </div>
+  </div>
+</nav>
+
+<%= form_with(model: @category, url: categories_path) do |form| %>
+
+  <div class="field mt-3">
+    <%= form.text_field :name, class: "form-control", placeholder: "Name", required: true, autocomplete: "off" %>
+  </div>
+
+  <div class="field mb-3 mt-3">
+    <%= form.text_field :icon, class: "form-control", placeholder: "bi bi-capsule", required: true, autocomplete: "off" %>
+  </div>
+
+    <div class="mt-5 ps-5">
+      <p class="fw-bold">The following text is just added for instruction:</p>
+      <p class="ms-3">For adding icon you can use bootstrap icons</p>
+      <p class="ms-3">Like: bi bi-capsule</p>
+     <p class="ms-3">Like: bi bi-book</p>
+    </div>
+
+    <div class="footer footer_fixed">
+    <%= form.submit "Save", class: 'footer-button'  %>
+    </div>
+    <% end %>
+
+  </div>
+  </div>
+
