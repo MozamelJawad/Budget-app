@@ -61,7 +61,7 @@ Ruby, Ruby on Rails, Postgresql, Visual Studio Code
 
 ### Setup <a name="setup"></a>
 
-In order to use this project.. Clone this repository to your desired folder by:
+To use this project. Clone this repository to your desired folder by:
 
 - https://github.com/MozamelJawad/Budget-app.git
 
