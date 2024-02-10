@@ -24,7 +24,7 @@
 
 # 📖 [Budget app] <a name="about-project"></a>
 
-The **Budget App** is a Ruby on Rails mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.
+The **Budget App** is a Ruby on Rails mobile web application where you can manage your budget: you have a list of transactions associated with a category so that you can see how much money you spent and on what.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -61,7 +61,7 @@ Ruby, Ruby on Rails, Postgresql, Visual Studio Code
 
 ### Setup <a name="setup"></a>
 
-In order to use this project.. Clone this repository to your desired folder by:
+To use this project... Clone this repository to your desired folder by:
 
 - https://github.com/MozamelJawad/Budget-app.git
 
