@@ -130,7 +130,7 @@ Kindly give this project a star if you like it.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-- I would like to thank Microverse.
+- I would like to thank Microverse. 
 - Special thanks to [Gregoire Vella on Behance](https://www.behance.net/gregoirevella) for providing the design.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
