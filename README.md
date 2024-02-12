@@ -28,7 +28,7 @@ The **Budget App** is a Ruby on Rails mobile web application where you can manag
 
 ## 🛠 Built With <a name="built-with"></a>
 
-Ruby, Ruby on Rails, Postgresql, Visual Studio Code
+Ruby, Ruby on Rails, Postgresql, Visual Studio Code.
 
 ### Tech Stack <a name="tech-stack"></a>
 
