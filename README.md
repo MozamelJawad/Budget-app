@@ -94,7 +94,7 @@ rails s
 To test, run:
 
 ```
-rspec
+RSpec
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
