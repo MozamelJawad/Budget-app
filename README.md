@@ -44,7 +44,6 @@ Ruby, Ruby on Rails, Postgresql, Visual Studio Code.
 - [Live Demo Link](https://budget-app-d0ig.onrender.com)
 
 ### Key Features <a name="key-features"></a>
-
 - **[Database Connection and ORM]**
 - **[Authentication ]**
 - **[Authorization ]**
